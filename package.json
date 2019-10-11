@@ -1,9 +1,11 @@
 {
   "name": "jfdd6-kod80-app",
+  "homepage": "https://pawelszy.github.io/jfdd6-kod80-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "gh-pages": "^2.1.1",
     "moment": "^2.17.1",
     "react": "15.4.2",
     "react-bootstrap": "^0.30.7",
@@ -27,6 +29,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
